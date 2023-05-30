@@ -1,0 +1,77 @@
+resta.js.
+
+A). ¿Qué valor devuelve su programa si el minuendo es 10 y el
+sustraendo 2?
+
+=8
+
+multiplicacion.js
+
+A).¿Qué valor devuelve su programa si los números son 2 *17 * 6?
+
+=204
+
+areaRectangulo.js
+
+A).  ¿Cuál es el área de un rectángulo de base 5cm y altura 3cm?
+let base = 5 ;
+let altura = 3;
+let areaRectangulo = (base*altura);
+console.log(areaRectangulo);
+ 
+=15
+
+B). ¿Cuál es el área de un rectángulo de base 12.5cm y altura 5.3cm?
+let baseB = 12.5;
+let alturaB = 5.3;
+let areaRectanguloB = (baseB*alturaB);
+console.log(areaRectanguloB); 
+
+=66,25
+
+conversionGrados.js.
+
+A). ¿Cuántos grados C son 50 F?
+
+let grados_fagrenheit = 50
+let grados_celsius = (grados_fagrenheit - 32)* (05/9)
+console.log(grados_celsius)
+
+=10
+
+B). ¿Cuántos grados C son 75 F?
+
+let grados_fagrenheitB = 75
+let grados_celsiusB = (grados_fagrenheitB - 32)* (05/9)
+console.log(grados_celsiusB)
+
+=23.88888888888889
+
+promedio3.js
+
+A). ¿Cuál es el promedio entre 5, 7 y 9?
+let num1 = 5;
+let num2 = 7;
+let num3 = 9;
+let promedio = (num1+num2+num3) /3;
+console.log(promedio)
+
+=7
+
+B). ¿Cuál es el promedio entre -2 , -3, -8?
+let num1B = -2;
+let num2B = -3;
+let num3B = -8;
+let promedioB = (num1B+num2B+num3B) /3;
+console.log(promedioB)
+
+=-4.333333333333333
+
+C). ¿Cuál es el promedio entre -1.2, 5.3, -3.3?
+let num1C = -1.2;
+let num2C = 5.3;
+let num3C = -3.3;
+let promedioC = (num1C+num2C+num3C) /3;
+console.log(promedioC)
+
+=0.2666666666666666
