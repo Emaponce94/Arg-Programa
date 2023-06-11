@@ -1,0 +1,87 @@
+PARTE 1: VARIABLES
+
+1. Escribir un programa que:
+
+// a. Defina una variable nombre.
+let nombre 
+//b. Guarde en la variable nombre tu nombre real.
+nombre = "Emanuel David";
+//c. Defina y asigne, en un mismo paso, la variable apellido. El valor a asignar deberá ser tu apellido real.
+let apellido = "Ponce";
+//d. Repita el paso anterior, pero esta vez definiendo la variable edad y asignandole tu edad real.
+let  edad = 28
+//e. Por último, imprime por consola un mensaje que respete el siguiente formato: "Hola, [nombre] [apellido]. Tienes [edad] años."
+console.log("Hola, "+ nombre + " " + apellido +". Tienes " + edad + " años.");
+
+2. ¿De qué manera representaría las variables del ejercicio anterior en un objeto,
+llamémosle persona?
+
+//a.
+let persona = {nombre: "Emanuel David",  apellido: "Ponce", edad: 28};
+//b.
+console.log("Mi objeto persona es el siguiente: "+ JSON.stringify(persona));
+
+PARTE 2: COMANDOS BÁSICOS
+
+3. Operadores aritméticos:
+
+// a. Crea cuatro variables que contengan valores numéricos.
+let num1 = 10;
+let num2 = 12;
+let num3 = 9;
+let num4 = 11;
+
+// b. Suma las dos primeras variables y guarda el resultado en otra variable.
+let suma = num1 + num2;
+
+// c. Resta la cuarta variable de la tercera y almacena el resultado en otra variable.
+let resta = num4 - num3;
+
+// d. Multiplica los resultados de los dos últimos pasos juntos, almacenando el resultado en una variable llamada resultadoFinal.
+let resultadoFinal = suma * resta;
+
+// e. Escribe un cálculo que verifique si resultadoFinal es un número par. Almacene el resultado en una variable llamada esPar.
+let esPar = resultadoFinal % 2 === 0;
+
+// f. Imprime por consola un mensaje con el formato requerido.
+console.log("Mis variables iniciales fueron: %i, %i, %i y %i.La respuesta a verificar si el resultado final es par es: %s" , num1,num2,num3,num4,esPar)
+
+4. Manejo de strings:
+
+// Valores iniciales
+let cita = "Tres tristes tigres comen trigo en un trigal";
+let substring = "tigres comen trigo";
+
+// a. Recuperar la longitud de la cita
+let tamañoDeCita = cita.length;
+console.log("El tamaño de la cita es: " + tamañoDeCita);
+
+// b. Buscar la posición del índice donde aparece el substring en la cita
+let indice = cita.indexOf(substring);
+console.log("El índice del substring es: " + indice);
+
+// c. Recortar la cita original y almacenarla en una variable llamada citaRevisada
+let citaRevisada = cita.slice(0, 31);
+console.log(citaRevisada);
+
+
+5. Manejo de arreglos:
+
+// a. Crear un arreglo vacío con el nombre de frutas.
+let frutas = [];
+
+// b. Agregar cinco frutas distintas al arreglo.
+frutas.push("Manzana");
+frutas.push("Naranja");
+frutas.push("Plátano");
+frutas.push("Uva");
+frutas.push("Pera");
+
+// c. Obtener la última fruta agregada.
+let ultima = frutas[frutas.length - 1];
+console.log("La última fruta agregada fue: " + ultima);
+
+// d. Obtener la primera fruta agregada.
+let primera = frutas[0];
+console.log("La primera fruta agregada fue: " + primera);
+
