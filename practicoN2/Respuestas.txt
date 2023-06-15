@@ -35,7 +35,6 @@ if (mes >= 1 && mes <= 12) {
 }
 
 //3
-
 const readlineSync = require('readline-sync');
 let numero = parseInt(readlineSync.question('Ingrese un numero entero: '));
 if (numero > 0 && numero % 2 === 0) {
@@ -49,7 +48,7 @@ if (numero > 0 && numero % 2 === 0) {
   }
 
   //4
-
+  
   const readlineSync = require('readline-sync');
 let dias = parseInt(readlineSync.question('Ingrese un numero: '));
 switch (dias) {
