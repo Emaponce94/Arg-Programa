@@ -1,4 +1,0 @@
-.gitignore
-ignore/
-Clases/
- practicoN2/node_modules/
