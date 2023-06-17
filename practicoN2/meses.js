@@ -4,10 +4,19 @@ let mes = parseInt(readlineSync.question('Ingrese un numero del 1 al 12 represen
 let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
-let cantidadDias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+let cantidadDias;
 
 if (mes >= 1 && mes <= 12) {
-    console.log("La cantidad de días del mes de %s es %i", meses[mes - 1], cantidadDias[mes - 1]);
+  if (mes === 2) {
+    cantidadDias =28; 
+  } else if (mes === 4 || mes === 6 || mes === 9 || mes === 11) {
+    cantidadDias = 30;
 } else {
-  console.log("Número de mes inválido");
+    cantidadDias = 31;
+   
+  }
+  
+console.log("La cantidad de días del mes de %s es %i", meses[mes - 1], cantidadDias);
+} else {
+console.log("Número de mes inválido");
 }
