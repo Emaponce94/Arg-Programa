@@ -1,8 +1,8 @@
 const readlineSync = require('readline-sync');
 let mes = parseInt(readlineSync.question('Ingrese un numero del 1 al 12 representando un mes: '));
 
-let meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
- 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+ 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
 let cantidadDias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
