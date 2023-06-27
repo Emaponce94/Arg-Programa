@@ -1,0 +1,59 @@
+
+//
+
+let personas = ["Jose", "Maria", "Juan", "Andres", "Lionel", "Sofia", "Leandro", "Emilia"];
+let invitados = "";
+
+for (let i = 0; i < personas.length; i++) {
+  if (personas[i] === "Jose" || personas[i] === "Sofia") {
+    invitados += personas[i] + " (rechazado)\n";
+  } else {
+    invitados += personas[i] + "\n";
+  }
+}
+
+console.log("Lista de invitados:\n" +invitados);
+
+//
+let d = 0;
+let rechazados = [];
+while (d < personas.length){
+  (personas[d] === "Jose" ||  personas[d] === "Sofia" ? rechazados.push(personas[d]) : null );
+  d++
+}
+
+console.log("La lista ordenada de invitados rechazados es:\n"+rechazados.join("\n"));
+
+//
+
+let e = 0;
+let admitidos  = [];
+while (e < personas.length){
+  (personas[e] !== "Jose" &&  personas[e] !== "Sofia" ? admitidos.push(personas[e]) : null );
+  e++
+}
+
+console.log("La lista de invitados admitidos es:\n"+admitidos.join("\n"));
+
+
+//
+
+let f = 0;
+let rechazados1 = [];
+while (f < personas.length){
+  (personas[f] === "Jose" ||  personas[f] === "Sofia" ? rechazados1.push(personas[f]) : null );
+  f++
+}
+rechazados1.sort();
+console.log("La lista ordenada de invitados rechazados es:\n"+rechazados1.join("\n"));
+
+//
+
+let g = 0;
+let admitidos1  = [];
+while (g < personas.length){
+  (personas[g] !== "Jose" &&  personas[g] !== "Sofia" ? admitidos1.push(personas[g]) : null );
+  g++
+}
+admitidos1.sort();
+console.log("La lista ordenada de invitados admitidos es:\n"+admitidos1.join("\n"));
