@@ -1,3 +1,11 @@
+///
+let i = 10;
+
+while (i >= 0) {
+  let cuentaRegresiva = i === 10 ? "Cuenta regresiva, 10" : (i === 0 ? "0, Lanzamiento!" : i);
+  --i;
+  console.log(cuentaRegresiva); 
+}
 
 //
 
